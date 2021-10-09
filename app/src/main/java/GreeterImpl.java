@@ -1,4 +1,4 @@
-package example;
+// package example;
 
 import example.grpc.helloworld.GreeterGrpc;
 import example.grpc.helloworld.HelloReply;

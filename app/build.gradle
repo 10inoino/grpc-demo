@@ -18,6 +18,15 @@ dependencies {
   testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.5.2'
 }
 
+sourceSets {
+  main {
+    java {
+      srcDirs "$buildDir/generated/source/proto/main/grpc"
+      srcDirs "$buildDir/generated/source/proto/main/java"
+    }
+  }
+}
+
 test {
   useJUnitPlatform()
   testLogging.showStandardStreams = true
